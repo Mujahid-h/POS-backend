@@ -2,13 +2,13 @@
   "name": "pos",
   "version": "1.0.0",
   "description": "POS-MERN app",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {
   "node": "22.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js --ignore './client/'",
+    "start": "node index.js",
+    "server": "nodemon index.js --ignore './client/'",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "seed": "node seeder.js"
