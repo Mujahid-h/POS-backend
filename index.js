@@ -31,6 +31,6 @@ app.use("/api/bills", require("./routes/billRoutes"));
 const PORT = 8080;
 
 // listen
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`.bgCyan.white);
 });
